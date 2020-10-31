@@ -7,9 +7,11 @@
   background: #242525;
   transition: background 0.3s ease;
   @include respond-to(mobile) {
-    left: 30px;
-    width: calc(100vw - 30px);
+    // left: 30px;
+    // width: calc(100vw - 30px);
     overflow-x: auto;
+    left: 0;
+    width: 100%;
   }
   .nav {
     &-menu {
@@ -42,6 +44,11 @@
     position: absolute;
     top: 10px;
     right: 30px;
+    @include respond-to(mobile) {
+      top: 60px;
+      right: 15px;
+      position: fixed;
+    }
   }
 }
 

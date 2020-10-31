@@ -5,17 +5,68 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video, button {
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
   margin: 0;
   padding: 0;
   border: 0;
@@ -26,7 +77,8 @@ time, mark, audio, video, button {
   font-style: normal;
 }
 
-cite, code {
+cite,
+code {
   display: inline-block;
   font-style: normal;
 }
@@ -37,23 +89,39 @@ button {
 
 body {
   line-height: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, label {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+label {
   display: block;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -87,7 +155,8 @@ del {
   text-decoration: line-through;
 }
 
-abbr[title], dfn[title] {
+abbr[title],
+dfn[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
@@ -97,7 +166,9 @@ table {
   border-spacing: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   outline: none;
   vertical-align: middle;
   resize: none;
@@ -753,6 +824,9 @@ html {
   transition: all 0.3s ease;
   box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.15);
 }
+.toggle-switch #checkboxId:checked + .toggle-box {
+  background: black;
+}
 .toggle-switch #checkboxId:checked + .toggle-box .toggle-circle {
   background: white;
   transform: translateX(25px);
@@ -769,16 +843,16 @@ html {
 }
 @media only screen and (max-width: 600px) {
   .header {
-    left: 30px;
-    width: calc(100vw - 30px);
     overflow-x: auto;
+    left: 0;
+    width: 100%;
   }
 }
 @media only screen and (max-width: mobile) {
   .header {
-    left: 30px;
-    width: calc(100vw - 30px);
     overflow-x: auto;
+    left: 0;
+    width: 100%;
   }
 }
 .header .nav-menu {
@@ -823,6 +897,20 @@ html {
   top: 10px;
   right: 30px;
 }
+@media only screen and (max-width: 600px) {
+  .header .toggle-switch {
+    top: 60px;
+    right: 15px;
+    position: fixed;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .header .toggle-switch {
+    top: 60px;
+    right: 15px;
+    position: fixed;
+  }
+}
 
 main.dark .article {
   background: #fdfdfd;
@@ -835,6 +923,16 @@ main.dark .article {
   width: 100vw;
   height: 30px;
   background: #257acc;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    display: none;
+  }
+}
+@media only screen and (max-width: mobile) {
+  .footer {
+    display: none;
+  }
 }
 
 .aside {
@@ -864,12 +962,12 @@ main.dark .article {
 }
 @media only screen and (max-width: 600px) {
   .aside {
-    width: 30px;
+    display: none;
   }
 }
 @media only screen and (max-width: mobile) {
   .aside {
-    width: 30px;
+    display: none;
   }
 }
 .aside > img {
@@ -889,14 +987,18 @@ main.dark .article {
 }
 @media only screen and (max-width: 600px) {
   .article {
-    width: calc(100vw - 30px);
-    left: 30px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: calc(100vh - 40px);
   }
 }
 @media only screen and (max-width: mobile) {
   .article {
-    width: calc(100vw - 30px);
-    left: 30px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    height: calc(100vh - 40px);
   }
 }
 .article-sub {

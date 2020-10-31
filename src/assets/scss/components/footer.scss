@@ -5,4 +5,7 @@
   width: 100vw;
   height: 30px;
   background: #257acc;
+  @include respond-to(mobile) {
+    display: none;
+  }
 }
