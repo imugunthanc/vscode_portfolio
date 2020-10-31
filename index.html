@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <header class="header">
+            <nav class="nav-menu">
+                <a class="nav-item active">
+                    <img src="/src/assets/img/home.svg" class="nav-icon">
+                    <span>Home</span>
+                </a>
+                <a class="nav-item">
+                    <img src="/src/assets/img/skills-3.svg" class="nav-icon">
+                    <span>Skills</span>
+                </a>
+                <a class="nav-item">
+                    <img src="/src/assets/img/info.svg" class="nav-icon">
+                    <span>About</span>
+                </a>
+                <a class="nav-item">
+                    <img src="/src/assets/img/contact.png" class="nav-icon">
+                    <span>Contact</span>
+                </a>
+            </nav>
+            <div class="toggle-switch">
+                <input type="checkbox" id="checkboxId" onchange="changeTheme(checkboxId.checked)">
+                <label for="checkboxId" class="toggle-box">
+                    <code class="toggle-circle"></code>
+                </label>
+            </div>
+        </header>
+        <section class="section">
+            <aside class="aside">
+                <img src="/src/assets/img/html5.svg" alt="">
+                <img src="/src/assets/img/css3.svg" alt="">
+                <img src="/src/assets/img/bootstrap-4.svg" alt="">
+                <img src="/src/assets/img/javascript-logo.svg" alt="">
+                <img src="/src/assets/img/angular-icon.svg" alt="">
+                <img src="/src/assets/img/sketch.svg" alt="">
+            </aside>
+            <article class="article">
+                <div class="home article-sub active">
+                    <h1 class="title-l1">Hello, <span class="highlight-color">I'm Mugunthan</span></h1>
+                    <p class="sub-text">FrontEnd Web Developer</p>
+                </div>
+                <div class="skills article-sub">
+                    <h2 class="title-l2">Skills</h2>
+                    <div class="skills-wrap">
+                        <span class="highlight-color">"Technologies": </span>[
+                        <br>
+                        &emsp;&emsp;&emsp;"HTML5",
+                        <br>
+                        &emsp;&emsp;&emsp;"CSS",
+                        <br>
+                        &emsp;&emsp;&emsp;"SASS",
+                        <br>
+                        &emsp;&emsp;&emsp;"Angular"
+                        <br>
+                        &emsp;&emsp;&emsp;"Bootsrap",
+                        <br>
+                        &emsp;&emsp;&emsp;"JavaScript",
+                        <br>
+                        &emsp;&emsp;&emsp;"Responsive Design"
+                        <br>
+                        ]
+                    </div>
+                    <div class="skills-wrap">
+                        <span class="highlight-color">"Tools": </span>[
+                        <br>
+                        &emsp;&emsp;&emsp;"Sketch",
+                        <br>
+                        &emsp;&emsp;&emsp;"Invision",
+                        <br>
+                        &emsp;&emsp;&emsp;"Responsive Design,"
+                        <br>
+                        &emsp;&emsp;&emsp;"Visual Studio Code",
+                        <br>
+                        &emsp;&emsp;&emsp;"Git/Version Control"
+                        <br>
+                        ]
+                    </div>
+                </div>
+                <div class="about article-sub">
+                    <h2 class="title-l2">About</h2>
+                    <div class="skills-wrap">
+                        <span class="highlight-color">"Experience": </span>{
+                        <br>
+                        &emsp;&emsp;&emsp;"Company": <span class="value">"Reckonsys Tech Labs Pvt Ltd"</span>,
+                        <br>
+                        &emsp;&emsp;&emsp;"Designation": <span class="value">"FrontEnd Web Developer"</span>,
+                        <br>
+                        &emsp;&emsp;&emsp;"From": <span class="value">"Dec 2018 to present"</span>,
+                        <br>
+                        }
+                    </div>
+                </div>
+                <div class="contact article-sub">
+                    <h2 class="title-l2">Contact</h2>
+                    <div class="skills-wrap">
+                        <span class="highlight-color">"Contact": </span>{
+                        <br>
+                        &emsp;&emsp;&emsp;"Name": <span class="value">"Mugunthan C"</span>,
+                        <br>
+                        &emsp;&emsp;&emsp;"Email": <span class="value">"imugunthanc@gmail.com"</span>,
+                        <br>
+                        &emsp;&emsp;&emsp;"Contact": <span class="value">"9994860337"</span>,
+                        <br>
+                        &emsp;&emsp;&emsp;"Location": <span class="value">"Bangalore"</span>
+                        <br>
+                        }
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer class="footer"></footer>
+    </main>
+</body>
+<script>
+    let navItem = document.querySelectorAll('.nav-item');
+    let articleSub = document.querySelectorAll('.article-sub');
+    navItem.forEach(nav => {
+        nav.addEventListener('click', () => {
+            let index = Array.prototype.slice.call(navItem).indexOf(nav);
+            navItem.forEach(item => {
+                item.classList.remove('active');
+            });
+            articleSub.forEach(article => {
+                article.classList.remove('active');
+            });
+            navItem[index].classList.add('active');
+            articleSub[index].classList.add('active');
+        });
+    });
+    function changeTheme(event) {
+        let themeWrapper = document.querySelector('.main');
+        if (event) {
+            themeWrapper.classList.add('main--white');
+        } else {
+            themeWrapper.classList.remove('main--white');
+        }
+    }
+</script>
+
+</html>

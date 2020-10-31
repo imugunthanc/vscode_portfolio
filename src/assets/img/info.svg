@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="420px" height="418px" viewBox="0 0 420 418" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>info</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M206,40.002 C297.74,40.002 372,114.243 372,206 C372,297.739 297.755,371.998 206,371.998 C114.262,371.998 40,297.756 40,206 C40,114.259 114.243,40.002 206,40.002 M206,0.002 C92.229,0.002 0,92.228 0,206 C0,319.769 92.229,411.998 206,411.998 C319.77,411.998 412,319.769 412,206 C412,92.228 319.77,0.002 206,0.002 L206,0.002 Z M202.566,321.808 C174.356,331.721 151.1,320.353 155.765,293.261 C160.432,266.163 187.201,208.152 191.02,197.182 C194.836,186.212 187.518,183.205 179.674,187.669 C175.15,190.279 168.426,195.51 162.654,200.594 C161.053,197.371 158.802,193.688 157.112,190.161 C166.531,180.722 182.276,168.067 200.915,163.48 C223.185,157.983 260.407,166.77 244.409,209.338 C232.985,239.678 224.906,260.614 219.815,276.206 C214.727,291.804 220.77,295.074 229.678,288.997 C236.637,284.246 244.05,277.783 249.484,272.771 C251.999,276.857 252.803,278.16 255.29,282.855 C245.857,292.524 221.182,315.151 202.566,321.808 Z M261.016,134.127 C248.221,145.018 229.256,144.782 218.646,133.595 C208.039,122.414 209.809,104.519 222.601,93.626 C235.395,82.736 254.364,82.972 264.971,94.151 C275.577,105.337 273.809,123.231 261.016,134.127 Z" id="path-1"></path>
+        <filter x="-1.7%" y="-1.2%" width="103.4%" height="103.4%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-509.000000, 0.000000)" fill-rule="nonzero">
+            <g id="info" transform="translate(513.000000, 0.000000)">
+                <g id="info-6-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#965DEC" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

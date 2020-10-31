@@ -1,0 +1,31 @@
+$theme-colors: ( "primary": #ed1c24, "secondary": #fff, );
+$white : #fff !default;
+$black : #000 !default;
+
+$primary-text-color: #2b2b2b;
+// $primary-text-color--light: #2b2b2b80;
+$primary-brand-color: #ed1c24;
+$green: #55d100;
+$dark-green: #2fb40f;
+
+// /* font weight */
+$very-light: 100;
+$light: 300;
+$light-italic: 300;
+$regular: 400;
+$regular-italic: 400;
+$medium: 500;
+$semibold: 600;
+$semibold-italic: 600;
+$bold: 700;
+$bold-italic: 700;
+
+/* img path */
+$img-path: "../img";
+$img-icons-path: "../img/icons";
+
+/* break points*/
+$bp-mobile: 600px;
+$bp-mobile-ls: 768px;
+$bp-tablet: 992px;
+$bp-large: 1300px;
